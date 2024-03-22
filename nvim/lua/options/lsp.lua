@@ -7,7 +7,8 @@ M.format = {
 
 M.servers = {
     'ruff_lsp',
-    'pyright'
+    'pyright',
+    'dockerls',
 }
 
 M.handlers = {
