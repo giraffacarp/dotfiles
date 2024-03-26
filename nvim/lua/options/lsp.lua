@@ -6,8 +6,10 @@ M.format = {
 }
 
 M.servers = {
+    -- python
     'ruff_lsp',
     'pyright',
+    -- docker
     'dockerls',
 }
 
