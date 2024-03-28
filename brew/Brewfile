@@ -1,0 +1,21 @@
+# 'brew install'
+brew "docker-completion"
+brew "fd"
+brew "fish"
+brew "fzf"
+brew "git-lfs"
+brew "htop"
+brew "lazygit"
+brew "neovim"
+brew "node"
+brew "ripgrep"
+brew "starship"
+brew "tmux"
+brew "tree"
+brew "tree-sitter"
+brew "zoxide"
+
+# 'brew install --cask'
+cask "miniconda"
+cask "wezterm"
+cask "docker"

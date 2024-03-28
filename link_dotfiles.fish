@@ -3,7 +3,7 @@
 # Default vars
 set default_source_dir (pwd)
 set default_target_dir ~/.config
-set default_directories fish nvim conda tmux wezterm git lazygit starship
+set default_directories fish nvim conda tmux wezterm git lazygit starship brew
 
 # Parse command-line options
 set source_dir $default_source_dir
