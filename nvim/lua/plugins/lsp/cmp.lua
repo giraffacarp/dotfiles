@@ -13,8 +13,8 @@ local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 return {
   sources = {
-    {name = 'path'},
     {name = 'nvim_lsp'},
+    {name = 'path'},
     {name = 'buffer', keyword_length = 3},
   },
   formatting = require('lsp-zero').cmp_format(),
