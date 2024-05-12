@@ -1,7 +1,7 @@
 --
 M = {
     "jay-babu/mason-nvim-dap.nvim",
-    dependencies = {"mason.nvim"},
+    dependencies = {"williamboman/mason.nvim"},
     lazy = true,
 }
 

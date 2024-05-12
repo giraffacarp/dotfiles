@@ -1,7 +1,11 @@
 --
 M = {
     "mfussenegger/nvim-dap",
-    dependencies = {"jay-babu/mason-nvim-dap.nvim", "rcarriga/nvim-dap-ui"},
+    dependencies = {
+        "jay-babu/mason-nvim-dap.nvim", 
+        "rcarriga/nvim-dap-ui",
+        "theHamsta/nvim-dap-virtual-text",
+    },
     lazy = true,
 }
 
