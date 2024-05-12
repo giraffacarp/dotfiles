@@ -21,8 +21,8 @@ M.keys = {
 },
 {
     "<leader>ha",
-    function() require("harpoon"):list():append() end,
-    desc = "append current file"
+    function() require("harpoon"):list():add() end,
+    desc = "add current file"
 },
 {
     "<leader>h1",
