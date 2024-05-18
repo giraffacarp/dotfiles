@@ -14,6 +14,7 @@ brew "tmux"
 brew "tree"
 brew "tree-sitter"
 brew "zoxide"
+brew "stow"
 
 # 'brew install --cask'
 cask "miniconda"

@@ -1,0 +1,5 @@
+# exclude everything
+*
+# except config and plugins
+!fish.config
+!fish_plugins
