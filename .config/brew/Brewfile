@@ -1,6 +1,7 @@
 # 'brew install'
 brew "docker-completion"
 brew "fd"
+brew "eza"
 brew "bat"
 brew "fish"
 brew "fzf"
