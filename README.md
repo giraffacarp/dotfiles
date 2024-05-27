@@ -47,4 +47,6 @@ and set the theme
 ```
 $ fish_config theme save "Catppuccin Frappe"
 ```
-
+## Themes
+- [catppuccin fzf](https://github.com/catppuccin/fzf)
+- [catppuccin bat](https://github.com/catppuccin/bat)
