@@ -17,6 +17,7 @@ brew "tree"
 brew "tree-sitter"
 brew "zoxide"
 brew "stow"
+brew "wget"
 
 # 'brew install --cask'
 cask "miniconda"
