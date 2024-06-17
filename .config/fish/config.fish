@@ -12,6 +12,7 @@ set fish_greeting ""
 alias vim="nvim"
 alias lg="lazygit"
 alias ls="eza --color"
+alias cat="bat"
 
 ##############################################################
 # Terminal
