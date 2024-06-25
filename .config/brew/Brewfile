@@ -18,6 +18,8 @@ brew "tree-sitter"
 brew "zoxide"
 brew "stow"
 brew "wget"
+brew "golang"
+brew "golangci-lint"
 
 # 'brew install --cask'
 cask "miniconda"
