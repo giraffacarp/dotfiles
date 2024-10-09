@@ -20,8 +20,9 @@ brew "stow"
 brew "wget"
 brew "golang"
 brew "golangci-lint"
+brew "uv"
+brew "ruff"
 
 # 'brew install --cask'
-cask "miniconda"
 cask "wezterm"
 cask "docker"
