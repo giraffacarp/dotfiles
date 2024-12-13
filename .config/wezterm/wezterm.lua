@@ -23,7 +23,7 @@ config.window_padding = {
 -----------------------------------------------------------
 -- Appearance
 -----------------------------------------------------------
-config.color_scheme = 'Catppuccin Frappe'
+config.color_scheme = 'Catppuccin Macchiato'
 config.font = wezterm.font_with_fallback {
     {
         family = 'MonoLisa',
