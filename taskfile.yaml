@@ -18,6 +18,6 @@ tasks:
 
   stow:
     desc: Link files to .config
-    cmd: stow -t $HOME {{.ROOT_DIR}}
+    cmd: stow -t $HOME .
     preconditions:
       - which stow
