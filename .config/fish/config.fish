@@ -10,9 +10,12 @@ set fish_greeting ""
 ##############################################################
 
 alias vim="nvim"
+alias uvim="uv run nvim"
 alias lg="lazygit"
+alias ulg="uv run lazygit"
 alias ls="eza --color"
 alias cat="bat"
+alias k="kubectl"
 
 ##############################################################
 # Terminal
@@ -34,6 +37,14 @@ set -gx STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
 starship init fish | source
 
 ##############################################################
+# carapace
+##############################################################
+# carapace --list | awk '{print $1}' | xargs -I{} touch ~/.config/fish/completions/{}.fish
+# carapace _carapace | source
+
+##############################################################
 # tools
 ##############################################################
 zoxide init fish | source
+direnv hook fish | source
+talhelper completion fish | source
