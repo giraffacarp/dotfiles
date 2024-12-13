@@ -6,47 +6,21 @@ This repo contains the dotfiles for my system
 
 Ensure you have the following installed on your system
 
-### Stow
-
-```
-$ brew install stow
-```
+- brew
+- go-task
 
 ## Installation
 
 Clone the repo to your system
-
 ```
 $ git clone git@github.com:oswdm/dotfiles.git
 $ cd dotfiles
 ```
 
-Use stow to create symlinks
+## Setup
 
+Use taskfile to install brew dependencies and create symlinks
 ```
-$ stow -t $HOME .
+$ task brew
+$ task stow
 ```
-
-## Shell setup
-
-Install shell and dependencies
-
-
-```
-$ brew install fish fisher starship zoxide
-```
-
-download fish plugins using fisher
-
-```
-$ fisher update
-```
-
-and set the theme
-
-```
-$ fish_config theme save "Catppuccin Frappe"
-```
-## Themes
-- [catppuccin fzf](https://github.com/catppuccin/fzf)
-- [catppuccin bat](https://github.com/catppuccin/bat)
