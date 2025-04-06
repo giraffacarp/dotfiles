@@ -7,6 +7,14 @@ if wezterm.config_builder then
 end
 
 -----------------------------------------------------------
+-- Default prog
+-----------------------------------------------------------
+config.default_prog = { '/opt/homebrew/bin/nu' }
+config.set_environment_variables = {
+    XDG_CONFIG_HOME = os.getenv("HOME") .. "/.config",
+}
+
+-----------------------------------------------------------
 -- General
 -----------------------------------------------------------
 config.enable_tab_bar = false
@@ -35,7 +43,7 @@ config.font = wezterm.font_with_fallback {
         family = 'MonoLisa Nerd Font',
     }
 }
-config.font_size = 15
+config.font_size = 14
 
 -- config
 return config
