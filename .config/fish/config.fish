@@ -48,3 +48,6 @@ starship init fish | source
 zoxide init fish | source
 direnv hook fish | source
 talhelper completion fish | source
+
+# uv
+fish_add_path "/Users/oswd/.local/bin"
