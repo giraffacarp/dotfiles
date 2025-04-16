@@ -15,6 +15,7 @@ alias k = kubectl
 # config
 # --------------------------------------------------------------------------------------
 $env.config.show_banner = false
+$env.config.edit_mode = "vi"
 $env.config.buffer_editor = "nvim"
 $env.config.history = {
   file_format: sqlite
