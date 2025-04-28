@@ -44,6 +44,11 @@ $env.LS_COLORS = (vivid generate catppuccin-macchiato)
 source scripts/direnv.nu
 
 # --------------------------------------------------------------------------------------
+# keymaps
+# --------------------------------------------------------------------------------------
+source keymaps/fzf.nu
+
+# --------------------------------------------------------------------------------------
 # tools
 # --------------------------------------------------------------------------------------
 mkdir ~/.cache/nushell
@@ -55,7 +60,7 @@ source ~/.cache/nushell/starship.nu
 source ~/.cache/nushell/zoxide.nu
 
 # atuin init nu --disable-up-arrow | save -f ~/.cache/nushell/atuin.nu
-source ~/.cache/nushell/atuin.nu
+# source ~/.cache/nushell/atuin.nu
 
 # carapace _carapace nushell | save -f ~/.cache/nushell/carapace.nu
 source ~/.cache/nushell/carapace.nu
