@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://taskfile.dev/schema.json
-version: '3'
+version: "3"
 
 tasks:
   default: task --list
@@ -9,12 +9,20 @@ tasks:
     desc: Set up Homebrew tools
     cmd: brew bundle --file {{.ROOT_DIR}}/.config/brew/Brewfile
     sources:
-      - '{{.ROOT_DIR}}/.config/brew/Brewfile'
+      - "{{.ROOT_DIR}}/.config/brew/Brewfile"
     generates:
-      - '{{.ROOT_DIR}}/.config/brew/Brewfile.lock.json'
+      - "{{.ROOT_DIR}}/.config/brew/Brewfile.lock.json"
     preconditions:
       - test -f {{.ROOT_DIR}}/.config/brew/Brewfile
       - which brew
+
+  precommit:
+    desc: add pre-commit hooks
+    cmd: uvx pre-commit install
+    generates:
+      - "{{.ROOT_DIR}}/.git/hooks/pre-commit"
+    preconditions:
+      - which uvx
 
   stow:
     desc: Link files to .config
