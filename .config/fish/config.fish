@@ -28,4 +28,4 @@ set -gx LS_COLORS (vivid generate catppuccin-macchiato)
 # --------------------------------------------------------------------------------------
 zoxide init fish | source
 direnv hook fish | source
-starship init fish | source
+starship init fish | source & enable_transience
