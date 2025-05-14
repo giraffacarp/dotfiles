@@ -7,6 +7,7 @@ set fish_greeting ""
 # vim keybindings
 # --------------------------------------------------------------------------------------
 set -g fish_key_bindings fish_vi_key_bindings
+set -g fish_cursor_insert block
 set -g fish_sequence_key_delay_ms 250
 bind --mode insert --sets-mode default jj repaint
 
