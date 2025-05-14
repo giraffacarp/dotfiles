@@ -1,6 +1,6 @@
 .DS_STORE
-.git/
-.task/
+.git
+.task
 .pre-commit-config.yaml
 README.md
 taskfile.yaml
