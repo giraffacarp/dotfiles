@@ -32,9 +32,10 @@ config.window_padding = {
 -- Appearance
 -----------------------------------------------------------
 config.color_scheme = "Catppuccin Macchiato"
-config.font = wezterm.font("FiraCode Nerd Font", {
+config.font = wezterm.font({
+	family = "FiraCode Nerd Font",
 	weight = "Regular",
-	harfbuzz_features = { "zero", "ss01", "cv05" },
+	-- harfbuzz_features = { "zero", "ss01", "ss04", "ss05" },
 })
 config.font_size = 15
 
