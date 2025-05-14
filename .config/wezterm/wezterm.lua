@@ -32,18 +32,11 @@ config.window_padding = {
 -- Appearance
 -----------------------------------------------------------
 config.color_scheme = "Catppuccin Macchiato"
-config.font = wezterm.font_with_fallback({
-	{
-		family = "MonoLisa",
-		stretch = "Expanded",
-		weight = "Regular",
-		harfbuzz_features = { "calt=1", "liga=1", "zero", "ss06", "ss03", "ss07" },
-	},
-	{
-		family = "MonoLisa Nerd Font",
-	},
+config.font = wezterm.font("FiraCode Nerd Font", {
+	weight = "Regular",
+	harfbuzz_features = { "zero", "ss01", "cv05" },
 })
-config.font_size = 14
+config.font_size = 15
 
 -- config
 return config
