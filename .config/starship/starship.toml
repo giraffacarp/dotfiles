@@ -23,9 +23,9 @@ read_only = " 󰌾"
 style = "bold lavender"
 
 [character]
-success_symbol = "[❯](mauve)"
+success_symbol = "[❯](green)"
 error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+vimcmd_symbol = "[V](bold green)"
 
 [git_branch]
 format = "[$branch]($style)"
