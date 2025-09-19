@@ -20,11 +20,14 @@ alias k="kubectl"
 # --------------------------------------------------------------------------------------
 # env/path vars
 # --------------------------------------------------------------------------------------
-fish_add_path /opt/homebrew/bin
-fish_add_path "$HOME/.local/bin/"
-
 set -gx EDITOR nvim
 set -gx LS_COLORS (vivid generate catppuccin-macchiato)
+set -gx HOMEBREW_PREFIX /opt/homebrew
+set -gx HOMEBREW_CELLAR "$HOMEBREW_PREFIX/Cellar"
+set -gx HOMEBREW_REPOSITORY "$HOMEBREW_PREFIX/homebrew"
+
+fish_add_path "$HOMEBREW_PREFIX/bin"
+fish_add_path "$HOME/.local/bin/"
 
 # --------------------------------------------------------------------------------------
 # tools
