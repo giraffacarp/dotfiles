@@ -2,7 +2,7 @@
 # config
 ##############################################################
 palette = "catppuccin_macchiato"
-add_newline = false
+add_newline = true
 
 ##############################################################
 # pure prompt
