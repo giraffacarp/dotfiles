@@ -23,6 +23,15 @@ tasks:
       - "{{.ROOT_DIR}}/.git/hooks/pre-commit"
     preconditions:
       - which uvx
+      
+  run-once:
+    desc: commands to be ran once (e.g. theming)
+    run: once
+    cmds:
+      - curl https://raw.githubusercontent.com/catppuccin/fzf/refs/heads/main/themes/catppuccin-fzf-macchiato.fish | fish
+      - yes | fish_config theme save "Catppuccin Macchiato"
+    preconditions:
+      - which fish
 
   stow:
     desc: Link files to .config
