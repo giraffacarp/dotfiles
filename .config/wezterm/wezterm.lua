@@ -17,6 +17,8 @@ config.set_environment_variables = {
 -----------------------------------------------------------
 -- General
 -----------------------------------------------------------
+config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = true
 config.enable_tab_bar = false
 config.default_cwd = "~"
 config.window_padding = {
