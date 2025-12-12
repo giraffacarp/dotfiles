@@ -13,6 +13,7 @@ set -g fish_cursor_insert block
 # --------------------------------------------------------------------------------------
 alias n="nvim"
 alias lg="lazygit"
+alias ld="lazydocker"
 alias ls="eza --color"
 alias ll="eza -la --color"
 alias cat="bat"
