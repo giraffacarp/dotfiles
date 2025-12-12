@@ -13,3 +13,4 @@ opt.clipboard = "" -- unnamed clipboard
 -- ui
 --------------------------------------------------------------------------------
 opt.relativenumber = true -- relative linenumbers
+opt.colorcolumn = "120" -- vertical column
