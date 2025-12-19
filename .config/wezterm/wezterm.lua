@@ -13,6 +13,7 @@ config.default_prog = { "/opt/homebrew/bin/fish" }
 config.set_environment_variables = {
 	XDG_CONFIG_HOME = os.getenv("HOME") .. "/.config",
 }
+config.term = "wezterm"
 
 -----------------------------------------------------------
 -- General
