@@ -38,8 +38,9 @@ brew "golangci-lint"
 brew "uv"
 brew "ruff"
 brew "tree-sitter-cli"
+brew "fastfetch"
 
 # 'brew install --cask'
-cask "wezterm"
+cask "ghostty"
 cask "docker-desktop"
 cask "font-fira-code-nerd-font"

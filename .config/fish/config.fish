@@ -4,9 +4,9 @@
 set fish_greeting ""
 
 # --------------------------------------------------------------------------------------
-# vim keybindings
+# cursor
 # --------------------------------------------------------------------------------------
-set -g fish_cursor_insert block
+set -g fish_cursor_default block
 
 # --------------------------------------------------------------------------------------
 # aliases
@@ -27,6 +27,7 @@ fish_add_path "$HOMEBREW_PREFIX/bin"
 fish_add_path "$HOME/.local/bin/"
 
 set -gx EDITOR nvim
+set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx LS_COLORS (vivid generate catppuccin-macchiato)
 set -gx HOMEBREW_PREFIX /opt/homebrew
 set -gx HOMEBREW_CELLAR "$HOMEBREW_PREFIX/Cellar"
@@ -39,3 +40,8 @@ zoxide init fish | source
 direnv hook fish | source
 starship init fish | source
 atuin init fish | source
+
+# --------------------------------------------------------------------------------------
+# system info
+# --------------------------------------------------------------------------------------
+fastfetch
