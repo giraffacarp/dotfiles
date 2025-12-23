@@ -27,7 +27,10 @@ tasks:
   run-once:
     desc: commands to be ran once (e.g. theming)
     run: once
+    deps:
+      - brew
     cmds:
+      - touch ~/.hushlogin
       - fisher update
       - curl https://raw.githubusercontent.com/catppuccin/fzf/refs/heads/main/themes/catppuccin-fzf-macchiato.fish | fish
       - yes | fish_config theme save "Catppuccin Macchiato"
