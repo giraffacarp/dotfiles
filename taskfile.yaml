@@ -31,10 +31,9 @@ tasks:
       - brew
     cmds:
       - touch ~/.hushlogin
-      - fisher update
+      - fish -c "fisher update"
       - curl https://raw.githubusercontent.com/catppuccin/fzf/refs/heads/main/themes/catppuccin-fzf-macchiato.fish | fish
-      - yes | fish_config theme save "Catppuccin Macchiato"
-      - tempfile=$(mktemp) && curl -o $tempfile https://raw.githubusercontent.com/wez/wezterm/main/termwiz/data/wezterm.terminfo && tic -x -o ~/.terminfo $tempfile && rm $tempfile
+      - fish -c "yes | fish_config theme save 'Catppuccin Macchiato'"
     preconditions:
       - which fish
 
