@@ -13,7 +13,7 @@ Ensure you have the following installed on your system
 
 Clone the repo to your system
 ```
-$ git clone git@github.com:oswdm/dotfiles.git
+$ git git@github.com:giraffacarp/dotfiles.git
 $ cd dotfiles
 ```
 
@@ -22,5 +22,6 @@ $ cd dotfiles
 Use taskfile to install brew dependencies and create symlinks
 ```
 $ task brew
+$ task run-once
 $ task stow
 ```
