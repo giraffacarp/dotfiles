@@ -34,6 +34,7 @@ tasks:
       - fish -c "fisher update"
       - curl https://raw.githubusercontent.com/catppuccin/fzf/refs/heads/main/themes/catppuccin-fzf-macchiato.fish | fish
       - fish -c "yes | fish_config theme save 'Catppuccin Macchiato'"
+      - $HOMEBREW_PREFIX/opt/tpm/share/tpm/bin/install_plugins
     preconditions:
       - which fish
 
