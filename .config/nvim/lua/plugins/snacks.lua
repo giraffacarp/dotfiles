@@ -5,11 +5,12 @@ local M = {
 
 M.opts = function(_, opts)
   opts.explorer = { enabled = false }
+  opts.picker = opts.picker or {}
   opts.picker.sources = {
     files = {
       hidden = true,
-      ignored = true,
-      exclude = { "node_modules", ".git", ".venv", ".ruff_cache" },
+      ignored = false, -- respect .gitignore
+      exclude = { "node_modules", ".git", ".venv", ".ruff_cache", "__pycache__", "*.pyc", "*.pth" },
     },
   }
 end

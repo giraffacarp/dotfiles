@@ -22,7 +22,7 @@ confirm-close-surface = false
 
 # --- macos ---
 macos-titlebar-style = transparent
-macos-option-as-alt = true
+macos-icon = "official"
 
 # --- Shell ---
 command = "/opt/homebrew/bin/fish"

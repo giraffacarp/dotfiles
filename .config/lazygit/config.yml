@@ -1,3 +1,6 @@
+git:
+  overrideGpg: true
+
 gui:
   authorColors:
     "*": "#f2d5cf"

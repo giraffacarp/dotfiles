@@ -39,8 +39,11 @@ brew "uv"
 brew "ruff"
 brew "tree-sitter-cli"
 brew "fastfetch"
+brew "openbao"
+brew "opentofu"
 
 # 'brew install --cask'
 cask "ghostty"
+cask "proton-pass"
 cask "docker-desktop"
 cask "font-fira-code-nerd-font"

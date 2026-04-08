@@ -10,8 +10,6 @@ tasks:
     cmd: brew bundle --file {{.ROOT_DIR}}/.config/brew/Brewfile
     sources:
       - "{{.ROOT_DIR}}/.config/brew/Brewfile"
-    generates:
-      - "{{.ROOT_DIR}}/.config/brew/Brewfile.lock.json"
     preconditions:
       - test -f {{.ROOT_DIR}}/.config/brew/Brewfile
       - which brew
@@ -34,6 +32,12 @@ tasks:
       - fish -c "fisher update"
       - curl https://raw.githubusercontent.com/catppuccin/fzf/refs/heads/main/themes/catppuccin-fzf-macchiato.fish | fish
       - fish -c "yes | fish_config theme save 'Catppuccin Macchiato'"
+      - mkdir -p "$(bat --config-dir)/themes"
+      - curl -fsSL https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Macchiato.tmTheme -o "$(bat --config-dir)/themes/Catppuccin Macchiato.tmTheme"
+      - curl -fsSL https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Latte.tmTheme -o "$(bat --config-dir)/themes/Catppuccin Latte.tmTheme"
+      - curl -fsSL https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Frappe.tmTheme -o "$(bat --config-dir)/themes/Catppuccin Frappe.tmTheme"
+      - curl -fsSL https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme -o "$(bat --config-dir)/themes/Catppuccin Mocha.tmTheme"
+      - bat cache --build
       - $HOMEBREW_PREFIX/opt/tpm/share/tpm/bin/install_plugins
     preconditions:
       - which fish
