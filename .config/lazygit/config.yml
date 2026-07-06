@@ -2,6 +2,7 @@ git:
   overrideGpg: true
 
 gui:
+  nerdFontsVersion: "3"
   authorColors:
     "*": "#f2d5cf"
   theme:

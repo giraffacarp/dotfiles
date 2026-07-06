@@ -24,17 +24,17 @@ style = "lavender"
 read_only = "󰌾"
 
 [character]
-success_symbol = "[❯](pink)"
+success_symbol = "[❯](mauve)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "overlay0"
+style = "subtext0"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](pink) ($ahead_behind$stashed)]($style) "
-style = "lavender"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](yellow) ($ahead_behind$stashed)]($style) "
+style = "subtext0"
 conflicted = "​"
 untracked = "​"
 modified = "​"
@@ -45,15 +45,14 @@ stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "overlay0"
+style = "subtext0"
 
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "overlay0"
+disabled = true
 
 ##############################################################
 # palette

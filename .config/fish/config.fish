@@ -2,6 +2,7 @@
 # general
 # --------------------------------------------------------------------------------------
 set fish_greeting ""
+fish_config theme choose catppuccin-macchiato
 
 # --------------------------------------------------------------------------------------
 # cursor
@@ -40,10 +41,3 @@ zoxide init fish | source
 direnv hook fish | source
 starship init fish | source
 atuin init fish | source
-
-# --------------------------------------------------------------------------------------
-# system info
-# --------------------------------------------------------------------------------------
-if status is-interactive
-    fastfetch
-end
